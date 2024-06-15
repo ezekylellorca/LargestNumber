@@ -4,7 +4,6 @@ public class LargestNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input three numbers from the user
         System.out.print("Enter the first number: ");
         int num1 = scanner.nextInt();
 
@@ -14,10 +13,8 @@ public class LargestNumber {
         System.out.print("Enter the third number: ");
         int num3 = scanner.nextInt();
 
-        // Close the scanner to prevent resource leak
         scanner.close();
 
-        // Determine the largest number
         if (num1 == num2 && num2 == num3) {
             System.out.println("All numbers are equal: " + num1);
         } else {
